@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyGSN/GsnTypes.sol": "GsnTypes"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyGSN/GsnTypes.sol": {
+			"keccak256": "0xea2e586c2063773885f0043c594696831b7007a1388efbaa4054b19fab7a0b31",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://463a49b076bc12cf0037c2e956520b83ca0162429ab46885be0ae3327a360ebb",
+				"dweb:/ipfs/QmS9Q1cC24CLya6EusK1F3JoWKaZCWv8wgRC2izL9HwdpH"
+			]
+		},
+		"contracts/MyGSN/IForwarder.sol": {
+			"keccak256": "0xa0dd333c5542ec682be7a296af4ab8f795954ed3bb76dbf27b380aa7097114dc",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://bedafb4a774b87eee6387cf08ba863b49a021927d35004ab1e54b9b9ce834b82",
+				"dweb:/ipfs/QmPAc6UxhSkTNbLQQCwHmRQPucqExtZzXf2Feazv2AG3uU"
+			]
+		}
+	},
+	"version": 1
+}

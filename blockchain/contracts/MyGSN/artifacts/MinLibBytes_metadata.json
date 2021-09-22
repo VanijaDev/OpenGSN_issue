@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyGSN/MinLibBytes.sol": "MinLibBytes"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyGSN/MinLibBytes.sol": {
+			"keccak256": "0x2a33385f9e8dca695f4769c310295913f9f3992caf372ffdc98bb4dd075cac70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e14b08d2dc938d3b3886acebbbd05dc64347b5b78d9906b5fe35dbe38e5574a6",
+				"dweb:/ipfs/QmWbeEmGAgaMgHwfskJPpRoJX21XxtJN6d72RdyortGtZc"
+			]
+		}
+	},
+	"version": 1
+}

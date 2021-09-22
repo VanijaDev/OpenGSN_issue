@@ -1,0 +1,191 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "EIP712DOMAIN_TYPEHASH",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GENERIC_PARAMS",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAYDATA_TYPE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAYDATA_TYPEHASH",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAY_REQUEST_NAME",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAY_REQUEST_SUFFIX",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAY_REQUEST_TYPE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RELAY_REQUEST_TYPEHASH",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Bridge Library to map GSN RelayRequest into a call of a Forwarder",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyGSN/GsnEip712Library.sol": "GsnEip712Library"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyGSN/GsnEip712Library.sol": {
+			"keccak256": "0x0810079eaa08a2972614a962040da0a48a7caa895b0c94812a2feff1799664fe",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://65455666a590a84f3afe51e9af8cd97044d351b021c5e56ad855b96cfe5538f1",
+				"dweb:/ipfs/Qmd6uDAdbtoaKmXmpQFUmjfDBrk5wJr3H1JixBXQaVrmTQ"
+			]
+		},
+		"contracts/MyGSN/GsnTypes.sol": {
+			"keccak256": "0xea2e586c2063773885f0043c594696831b7007a1388efbaa4054b19fab7a0b31",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://463a49b076bc12cf0037c2e956520b83ca0162429ab46885be0ae3327a360ebb",
+				"dweb:/ipfs/QmS9Q1cC24CLya6EusK1F3JoWKaZCWv8wgRC2izL9HwdpH"
+			]
+		},
+		"contracts/MyGSN/GsnUtils.sol": {
+			"keccak256": "0xe5b578de10b9b4648b14694d6ff92721ebf327c5d0b9096bb5eadf466105ad9a",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://6bdf7a20c64b27b2fc1d3c3c2082e8160953a96fedecbf964d7cb0034745b667",
+				"dweb:/ipfs/QmdVrdUbaCMNdweYDMMumA6zCS16JnWD66mT85L19vNoPu"
+			]
+		},
+		"contracts/MyGSN/IForwarder.sol": {
+			"keccak256": "0xa0dd333c5542ec682be7a296af4ab8f795954ed3bb76dbf27b380aa7097114dc",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://bedafb4a774b87eee6387cf08ba863b49a021927d35004ab1e54b9b9ce834b82",
+				"dweb:/ipfs/QmPAc6UxhSkTNbLQQCwHmRQPucqExtZzXf2Feazv2AG3uU"
+			]
+		},
+		"contracts/MyGSN/IRelayRecipient.sol": {
+			"keccak256": "0xf0111b1abbba24b3d60615d73a9bb2f03e43e8ee7b556f1515d44d0afd41909a",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://0bffa2971bb278fa7bbfe167f3828875aa14cb2e7e98c78150397d556eac91a3",
+				"dweb:/ipfs/QmZpac3UhFVBo2cpphVD64Krkegu9dNDzyNpVjYdbkq4au"
+			]
+		},
+		"contracts/MyGSN/MinLibBytes.sol": {
+			"keccak256": "0x2a33385f9e8dca695f4769c310295913f9f3992caf372ffdc98bb4dd075cac70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e14b08d2dc938d3b3886acebbbd05dc64347b5b78d9906b5fe35dbe38e5574a6",
+				"dweb:/ipfs/QmWbeEmGAgaMgHwfskJPpRoJX21XxtJN6d72RdyortGtZc"
+			]
+		}
+	},
+	"version": 1
+}

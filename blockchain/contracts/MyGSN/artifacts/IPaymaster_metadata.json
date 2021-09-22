@@ -1,0 +1,387 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getGasAndDataLimits",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "acceptanceBudget",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "preRelayedCallGasLimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "postRelayedCallGasLimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "calldataSizeLimit",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IPaymaster.GasAndDataLimits",
+						"name": "limits",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getHubAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRelayHubDeposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "context",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gasUseWithoutPost",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "gasPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pctRelayFee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "baseRelayFee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "relayWorker",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "paymaster",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "forwarder",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "paymasterData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint256",
+								"name": "clientId",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GsnTypes.RelayData",
+						"name": "relayData",
+						"type": "tuple"
+					}
+				],
+				"name": "postRelayedCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "from",
+										"type": "address"
+									},
+									{
+										"internalType": "address",
+										"name": "to",
+										"type": "address"
+									},
+									{
+										"internalType": "uint256",
+										"name": "value",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "gas",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "nonce",
+										"type": "uint256"
+									},
+									{
+										"internalType": "bytes",
+										"name": "data",
+										"type": "bytes"
+									},
+									{
+										"internalType": "uint256",
+										"name": "validUntil",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct IForwarder.ForwardRequest",
+								"name": "request",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "gasPrice",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "pctRelayFee",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "baseRelayFee",
+										"type": "uint256"
+									},
+									{
+										"internalType": "address",
+										"name": "relayWorker",
+										"type": "address"
+									},
+									{
+										"internalType": "address",
+										"name": "paymaster",
+										"type": "address"
+									},
+									{
+										"internalType": "address",
+										"name": "forwarder",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "paymasterData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "uint256",
+										"name": "clientId",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct GsnTypes.RelayData",
+								"name": "relayData",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct GsnTypes.RelayRequest",
+						"name": "relayRequest",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "approvalData",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxPossibleGas",
+						"type": "uint256"
+					}
+				],
+				"name": "preRelayedCall",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "context",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bool",
+						"name": "rejectOnRecipientRevert",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "trustedForwarder",
+				"outputs": [
+					{
+						"internalType": "contract IForwarder",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "versionPaymaster",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getRelayHubDeposit()": {
+					"returns": {
+						"_0": "the paymaster's deposit in the RelayHub."
+					}
+				},
+				"postRelayedCall(bytes,bool,uint256,(uint256,uint256,uint256,address,address,address,bytes,uint256))": {
+					"params": {
+						"context": "- the call context, as returned by the preRelayedCall",
+						"gasUseWithoutPost": "- the actual amount of gas used by the entire transaction, EXCEPT        the gas used by the postRelayedCall itself.",
+						"relayData": "- the relay params of the request. can be used by relayHub.calculateCharge() Revert in this functions causes a revert of the client's relayed call (and preRelayedCall(), but the Paymaster is still committed to pay the relay for the entire transaction.",
+						"success": "- true if the relayed call succeeded, false if it reverted"
+					}
+				},
+				"preRelayedCall(((address,address,uint256,uint256,uint256,bytes,uint256),(uint256,uint256,uint256,address,address,address,bytes,uint256)),bytes,bytes,uint256)": {
+					"params": {
+						"approvalData": "- extra dapp-specific data (e.g. signature from trusted party)",
+						"maxPossibleGas": "- based on values returned from {@link getGasAndDataLimits},         the RelayHub will calculate the maximum possible amount of gas the user may be charged for.         In order to convert this value to wei, the Paymaster has to call \"relayHub.calculateCharge()\"  return:      a context to be passed to postRelayedCall      rejectOnRecipientRevert - TRUE if paymaster want to reject the TX if the recipient reverts.          FALSE means that rejects by the recipient will be completed on chain, and paid by the paymaster.          (note that in the latter case, the preRelayedCall and postRelayedCall are not reverted).",
+						"relayRequest": "- the full relay request structure",
+						"signature": "- user's EIP712-compatible signature of the {@link relayRequest}.              Note that in most cases the paymaster shouldn't try use it at all. It is always checked              by the forwarder immediately after preRelayedCall returns."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getGasAndDataLimits()": {
+					"notice": "Return the Gas Limits and msg.data max size constants used by the Paymaster."
+				},
+				"getHubAddr()": {
+					"notice": "return the relayHub of this contract."
+				},
+				"getRelayHubDeposit()": {
+					"notice": "Can be used to determine if the contract can pay for incoming calls before making any."
+				},
+				"postRelayedCall(bytes,bool,uint256,(uint256,uint256,uint256,address,address,address,bytes,uint256))": {
+					"notice": "This method is called after the actual relayed function call. It may be used to record the transaction (e.g. charge the caller by some contract logic) for this call. MUST be protected with relayHubOnly() in case it modifies state."
+				},
+				"preRelayedCall(((address,address,uint256,uint256,uint256,bytes,uint256),(uint256,uint256,uint256,address,address,address,bytes,uint256)),bytes,bytes,uint256)": {
+					"notice": "Called by Relay (and RelayHub), to validate if the paymaster agrees to pay for this call. MUST be protected with relayHubOnly() in case it modifies state. The Paymaster rejects by the following \"revert\" operations  - preRelayedCall() method reverts  - the forwarder reverts because of nonce or signature error  - the paymaster returned \"rejectOnRecipientRevert\", and the recipient contract reverted. In any of the above cases, all paymaster calls (and recipient call) are reverted. In any other case, the paymaster agrees to pay for the gas cost of the transaction (note  that this includes also postRelayedCall revert) The rejectOnRecipientRevert flag means the Paymaster \"delegate\" the rejection to the recipient  code.  It also means the Paymaster trust the recipient to reject fast: both preRelayedCall,  forwarder check and receipient checks must fit into the GasLimits.acceptanceBudget,  otherwise the TX is paid by the Paymaster."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyGSN/IPaymaster.sol": "IPaymaster"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyGSN/GsnTypes.sol": {
+			"keccak256": "0xea2e586c2063773885f0043c594696831b7007a1388efbaa4054b19fab7a0b31",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://463a49b076bc12cf0037c2e956520b83ca0162429ab46885be0ae3327a360ebb",
+				"dweb:/ipfs/QmS9Q1cC24CLya6EusK1F3JoWKaZCWv8wgRC2izL9HwdpH"
+			]
+		},
+		"contracts/MyGSN/IForwarder.sol": {
+			"keccak256": "0xa0dd333c5542ec682be7a296af4ab8f795954ed3bb76dbf27b380aa7097114dc",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://bedafb4a774b87eee6387cf08ba863b49a021927d35004ab1e54b9b9ce834b82",
+				"dweb:/ipfs/QmPAc6UxhSkTNbLQQCwHmRQPucqExtZzXf2Feazv2AG3uU"
+			]
+		},
+		"contracts/MyGSN/IPaymaster.sol": {
+			"keccak256": "0xee856e1f679453c47edd0e9682f3ce64e1601e339f8d978db642776b747410ee",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://1aa9e2f4a29494aefcb8db7d30884c7f7978289efa13238dea627d4a3d6df41d",
+				"dweb:/ipfs/Qmad8NiaEvPjAswgG2SP51XddTGE6DbG22Yx75dZGYdC5B"
+			]
+		}
+	},
+	"version": 1
+}

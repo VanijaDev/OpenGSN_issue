@@ -1,0 +1,148 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_forwarder",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "forwarder",
+						"type": "address"
+					}
+				],
+				"name": "isTrustedForwarder",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "trustedForwarder",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "updateValueVVV",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "valueVVV",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "versionRecipient",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isTrustedForwarder(address)": {
+					"notice": "return if the forwarder is trusted to forward relayed transactions to us. the forwarder is required to verify the sender's signature, and verify the call is not a replay."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyTestSC.sol": "TestSC"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@opengsn/contracts/src/BaseRelayRecipient.sol": {
+			"keccak256": "0xc52d38ab8f48b44bda064f803f2400e5d2d971969f1490430951e79135708fd2",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://21d5a88b0a45fd544fbc064bdf731ff2a2f918b4afb0b24d685727916c9206b3",
+				"dweb:/ipfs/QmfEyzDSkSVwNF9KEFmDvHzQvWJB2hpAeqQKzz8Dm1f8qB"
+			]
+		},
+		"@opengsn/contracts/src/interfaces/IRelayRecipient.sol": {
+			"keccak256": "0x6243d3a925653ed0bde57e9fae7fb87f12c58a2376b27ae23b53502322532e00",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://928801ac8ceac377f326cd48de8e0056db9a7f8767b60efee5dfca035f326702",
+				"dweb:/ipfs/QmYFkKXZcSVmmLNpDF1hvsLwAnhjmVSZuvEueaJgp1aVSg"
+			]
+		},
+		"contracts/MyTestSC.sol": {
+			"keccak256": "0x2b6794adbe5ce3df2b924c9391a2cc726cd387d57dc9a7485c95611f67647379",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://262990871c7ac0d31d21c97a2a1b56b45d32f12e7770ef0e9e5699c501b893a1",
+				"dweb:/ipfs/QmNdKZy8tdJzV1KE5CmowRhvEhwsJAB3sqf7fkL4k79aJJ"
+			]
+		}
+	},
+	"version": 1
+}
